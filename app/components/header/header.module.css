@@ -1,0 +1,135 @@
+.header {
+    background: #0f348b;
+    color: #f8fafc;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    box-shadow: 5px 10px 5px rgba(0, 0, 20, 20);
+    border-radius: 0 0 10px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nome {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9fbfd;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+
+.subtitulo {
+    font-size: 2rem;
+    color: #f8fafc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+
+/* Botão hambúrguer - escondido no PC */
+.toggle {
+    display: none;
+    background: none;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.link {
+    color: #f9fbfd;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-bottom: 2px solid rgb(248, 247, 247);
+}
+
+.link:hover {
+    color: #6585a5;
+    background-color: rgba(87, 10, 10, 0.1);
+}
+
+.linha {
+    position: absolute;
+    left: 8px;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #f9fbfd;
+    transition: transform 0.25s, top 0.25s, opacity 0.25s;
+}
+
+.linha:nth-child(1) {
+    top: 12px;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+.linha:nth-child(2) {
+    top: 19px;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+.linha:nth-child(3) {
+    top: 26px;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+/* Vira um "X" quando aberto */
+.toggle[aria-expanded="true"] .linha:nth-child(1) {
+    top: 19px;
+    transform: rotate(45deg);
+}
+
+.toggle[aria-expanded="true"] .linha:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle[aria-expanded="true"] .linha:nth-child(3) {
+    top: 19px;
+    transform: rotate(-45deg);
+}
+
+/* Mobile */
+@media (max-width: 1033px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+        background: #0f348b;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.3s ease, visibility 0.3s;
+    }
+
+    .navAberto {
+        max-height: 320px;
+        visibility: visible;
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 1rem 1rem;
+    }
+
+    .link {
+        display: block;
+        padding: 0.75rem 0;
+        font-size: 1.25rem;
+    }
+}
