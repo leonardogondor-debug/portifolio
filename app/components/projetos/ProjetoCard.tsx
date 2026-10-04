@@ -15,16 +15,18 @@ export default function ProjetoCard({ projeto }: { projeto: Projeto }) {
                 height={340}
             />
             <div className={styles.conteudo}>
-                <h3>{titulo}</h3>
+                <h3 className={styles.titulo}>{titulo}</h3>
                 <p>{descricao}</p>
                 <ul className={styles.tags}>
                     {tecnologias.map((tec) => (
                         <li key={tec}>{tec}</li>
                     ))}
                 </ul>
-                <a className={styles.tag__link} href={repositorio} target="_blank" rel="noopener noreferrer">
-                    Repositório
-                </a>
+                <div className={styles.links}>
+                    <a className={styles.tag__link} href={repositorio} target="_blank" rel="noopener noreferrer">
+                        Repositório
+                    </a>
+                </div>
             </div>
 
         </article>

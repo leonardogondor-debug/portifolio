@@ -5,14 +5,12 @@
     margin-bottom: 1rem;
     box-shadow: 5px 10px 5px rgba(0, 0, 20, 20);
     border-radius: 10px;
-    align-items: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-    transform: translateY(-10px); /* sobe 10px */
-    box-shadow: 5px 20px 15px rgba(0, 0, 20, 0.5); /* sombra aumenta, dando sensação de altura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grid {
@@ -23,15 +21,21 @@
 }
 
 .foto {
-    margin: 1rem;
-    border: 4px solid black;
     border-radius: 5%;
 }
 
 .conteudo {
-    font-size: 1.2rem;
+     font-size: 1.2rem;
     padding: 0 1rem;
     list-style: none;
+
+    flex: 1;                  
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    margin-bottom: 1rem;
 }
 
 .tags {
@@ -39,9 +43,13 @@
     list-style: none;
 }
 
+.links {
+    margin-top: auto;         
+    padding-top: 1rem;        
+}
+
 .tag__link {
     color: #f8fafc;
-    margin-left: 2rem;
 }
 
 .tag__link:hover {
