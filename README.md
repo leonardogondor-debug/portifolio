@@ -14,6 +14,15 @@ https://portifolio-one-beta-83.vercel.app/
 - **Habilidades:** tecnologias e conceitos agrupados por categoria.
 - **Contato:** formulário com validação simples e links para GitHub, LinkedIn e e-mail.
 
+## Projetos
+
+Os quatro projetos em destaque no portfólio, todos desenvolvidos durante o curso:
+
+- **Micro Frontends com Module Federation:** sistema de pedidos dividido em três aplicações independentes (Container, Micro Cardápio e Micro Pedido), integradas com Webpack Module Federation e Next.js. A comunicação entre os micros é feita por eventos globais do navegador. [Repositório](https://github.com/leonardogondor-debug/microFront)
+- **Lista de Tarefas com CI/CD:** lista de tarefas feita com Next.js, React e Tailwind, com testes em Jest e Testing Library. Um pipeline no GitHub Actions valida o código e publica automaticamente na Vercel. [Repositório](https://github.com/leonardogondor-debug/projeto-lista-tarefa) · [Deploy](https://projeto-lista-tarefa.vercel.app/)
+- **Diário de Bordo (PWA):** aplicativo web progressivo para registrar entradas de diário. Funciona offline com Service Worker, é instalável e salva os dados no navegador com `localStorage`. [Repositório](https://github.com/leonardogondor-debug/Diario-de-Bordo) · [Deploy](https://diario-de-bordo-pi-seven.vercel.app/)
+- **Meu Blog:** blog em Next.js (App Router) com artigos em JSON local, páginas estáticas em `/artigos/[slug]` (SSG) e metadados de SEO dinâmicos com `generateMetadata`. [Repositório](https://github.com/leonardogondor-debug/meu-blog) · [Deploy](https://meu-blog-leo-vit.vercel.app/)
+
 ## Tecnologias
 
 - [Next.js](https://nextjs.org/) 16 (App Router)
