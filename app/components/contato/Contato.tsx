@@ -55,7 +55,7 @@ export default function Contato() {
                     <h3>Ou me encontre aqui</h3>
                     <a href="https://github.com/leonardogondor-debug?tab=repositories">GitHub</a>
                     <a href="https://www.linkedin.com/in/leonardo-pacheco-vitorino-01b0052a2/?isSelfProfile=true">LinkedIn</a>
-                    <a href={`mailto:${Email}`}>{Email}</a>
+                    <a href="mailto:leonardogondor@gmail.com">{Email}</a>
                 </div>
             </div>
         </section>
